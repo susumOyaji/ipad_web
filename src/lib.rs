@@ -16,7 +16,8 @@ pub struct Article {
 
 #[wasm_bindgen]
 pub async fn fetch_movie_keywords() -> Result<JsValue, JsValue> {
-    let url = "https://yoshizo.hatenablog.com/entry/microsoft-rewards-search-keyword-list/#movie";
+    //let url = "https://yoshizo.hatenablog.com/entry/microsoft-rewards-search-keyword-list/#movie";
+    let url = "https://yahoo.co.jp/";
     
     let opts = RequestInit::new();
     opts.set_method("GET");
