@@ -1,0 +1,15 @@
+{
+  "name": "ipad_web",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "ipad_web_bg.wasm",
+    "ipad_web.js",
+    "ipad_web.d.ts"
+  ],
+  "main": "ipad_web.js",
+  "types": "ipad_web.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
