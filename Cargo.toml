@@ -1,0 +1,22 @@
+[package]
+name = "ipad_web"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+#wasm-bindgen = "0.2"
+wasm-bindgen = { version = "0.2", features = ["serde-serialize"] }
+web-sys = { version = "0.3", features = [
+    "Window", "Document", "HtmlDocument", "HtmlElement", "Element", "Node", 
+    "Request", "RequestInit", "RequestMode", "Response","DomParser","NodeList"
+] }
+wasm-bindgen-futures = "0.4"  # 追加する
+serde = { version = "1.0", features = ["derive"] }  # 追加する
+scraper = "0.12"  # 追加する
+serde_json = "1.0"  # 追加する
+wasm-logger = "0.2"
+js-sys = "0.3"  # 必要ならば
+serde-wasm-bindgen = "0.6"
